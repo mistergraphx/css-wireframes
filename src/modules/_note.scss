@@ -14,19 +14,25 @@
  */
 .wf-note {
 	border: 1px solid $color-external;
+	border-radius: 2px;
 	color: $color-external;
 	background-color: white;
-	display: block;
+	box-shadow: -2px 2px 0 rgba($color-external, 0.1);
+	display: inline-block;
 	padding: 1em;
 	font-size: 0.85em;
 	position: absolute;
-	top: -1em;
+	.wf-optional &,
+	&.wf-optional {
+		position: absolute; // counter the wf-optional position:relative
+	}
+	top: -0.5em;
 	right: -1em;
 	transform: rotate(4deg);
 	z-index: 100;
 	//font-family: $font-family-external;
-	
-	// Decoration 
+
+	// Decoration
 	&:before {
 		content: '';
 		position: absolute;
@@ -45,15 +51,15 @@
 		border-left: 1em solid $color-external;
 		width: 0;
 	}
-	
+
 	&--top-left {
 		right: auto;
 		left: -1em;
 		transform: rotate(-5deg);
 	}
-	// Already default 
+	// Already default
 	&--top-right {
-		
+
 	}
 	&--bottom-left {
 		top: auto;
@@ -66,17 +72,17 @@
 		top: auto;
 		bottom: -1em;
 	}
-	// Mof 
+	// Mof
 	&--left {
-		
+
 	}
 	&--top {
-		
+
 	}
 	&--right {
-		
+
 	}
 	&--bottom {
-		
+
 	}
 }

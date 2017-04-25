@@ -16,25 +16,24 @@
 	<script type="text/javascript" src="../dist/javascript/wireframes.min.js"></script>
 
 	<!-- ======== Documentation includes ======== -->
-	<!-- jQuery + tooltips -->
-	<script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tipsy@1.0"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/tipsy/1.0/stylesheets/tipsy.css">
+	<!-- jQuery + tooltips + sticky + code coloration -->
+	<script src="https://cdn.jsdelivr.net/g/jquery@3.2.1,tipsy@1.0,jquery.sticky-kit@1.1.2,prism@1.6.0"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/g/prism@1.6.0(themes/prism.css),tipsy@1.0(stylesheets/tipsy.css)">
 	<!-- Documentation CSS And Javascript -->
 	<link rel="stylesheet" href="css/documentation.css" type="text/css" />
 	<script src="javascript/documentation.js"></script>
-	<!-- Code coloration -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 </head>
 
-<body class="wf-padding--top padding--bottom">
-	<div class="container">
+<body>
 
+	<!-- #overview : gives a general idea of the framework possiblites at a gance -->
+	<section id="overview">
+		<div class="container">
 
-		<!-- Overview section -->
-		<section id="overview">
-			<div class="wf-block wf-margin--bottom wf-optional" title="A block">
+			<div class="wf-block wf-margin--bottom wf-optional" title="An optional block">
 				<span class="wf-block__label" title="A block label">Header</span>
 			</div>
 
@@ -49,40 +48,30 @@
 
 					<figure class="left">
 						<img src="../dist/images/ratio-4-3.png" width="120" class="wf-media" title="A media with a label">
-						<figcaption><span class="wf-text-lines">Vestibulum cras vinae</span></figcaption>
+						<figcaption><span class="wf-text-lines">Lorem vinae</span></figcaption>
 					</figure>
 
 					<img src="../dist/images/ratio-3-4.png" width="120" class="wf-media wf-media--dark right wf-margin--left" title="Dark variant of a media">
 
-					<p title="Some dummy text">
-						<span class="wf-text-lines">Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum a commodo a parturient sit cras laoreet adipiscing magna sapien. A interdum curabitur vestibulum vestibulum dui cursus aptent dictum litora ipsum viverra scelerisque vestibulum venenatis dictumst a. Sociosqu at et erat nulla parturient orci porttitor lorem lobortis consectetur nibh vulputate hac fames dis at a ullamcorper elementum donec eget platea aliquam phasellus. Suspendisse feugiat maecenas est vestibulum dictum suspendisse ante condimentum eleifend ut lectus in natoque interdum ultricies a dictum a mollis eros justo condimentum.</span>
-					</p>
-
-					<!--
-					<img src="../dist/images/ratio-1-1.png" width="50" class="wf-media wf-margin--left right" title="An image media">
-					<img src="../dist/images/ratio-1-1.png" width="50" class="wf-media wf-media--video wf-margin--left right" title="A video media">
-					<img src="../dist/images/ratio-1-1.png" width="50" class="wf-media wf-media--audio wf-margin--left right" title="An audio media">
-					-->
-
-					<p>
-						<span class="wf-text-lines" title="Some dummy text">Dui phasellus curabitur a eros at suspendisse ac tempus parturient ut dapibus ante vestibulum ultrices praesent parturient turpis donec vulputate nunc. Vestibulum mi nam inceptos parturient quis a ullamcorper venenatis nam a consectetur integer vestibulum vitae felis condimentum in donec porttitor fames ut parturient montes.
+					<p title="Dummy text" class="wf-margin--bottom-large">
+						<span class="wf-text-lines">Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum a commodo a parturient sit cras laoreet adipiscing magna sapien. A interdum curabitur vestibulum vestibulum dui cursus aptent dictum litora ipsum viverra scelerisque vestibulum venenatis dictumst a. Sociosqu at et erat nulla parturient orci porttitor lorem lobortis consectetur nibh vulputate hac fames dis at a ullamcorper elementum donec.</span>
 					</p>
 
 					<!-- Different types of texts : lines, block, and normal -->
 					<div class="row wf-margin--bottom-large">
 						<div class="col-md-4">
-							<p title="Some dummy text">
-								<span class="wf-text-lines">Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum <a href="#" title="A link inside a Dummy text">a commodo a parturient</a> sit cras laoreet adipiscing magna sapien. interdum a commodo a parturient sit cras laoreet adipiscing magna sapie.</span>
+							<p title="Dummy text">
+								<span class="wf-text-lines">Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum sit cras laoreet adipiscing magna sapien. <a href="#" title="A link inside a Dummy text">A commodo a parturient.</a></span>
 							</p>
 						</div>
 						<div class="col-md-4">
-							<p class="wf-text-words" title="Some dummy block text">
-								Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum <a href="#" title="A link inside a dummy block text">a commodo a parturient</a> sit cras laoreet adipiscing magna sapien.
+							<p class="wf-text-words" title="Dummy block text">
+								Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum sit cras laoreet adipiscing magna sapien. <a href="#" title="A link inside a Dummy text">A commodo a parturient.</a>
 							</p>
 						</div>
 						<div class="col-md-4">
 							<p title="Regular text">
-								Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum <a href="#" title="A link">a commodo a parturient</a> sit cras laoreet adipiscing magna sapien.
+								Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum sit cras laoreet adipiscing magna sapien. <a href="#" title="A link inside a Dummy text">A commodo a parturient.</a>
 							</p>
 						</div>
 					</div>
@@ -90,32 +79,32 @@
 					<!-- Colored variants of blocks -->
 					<div class="row">
 						<div class="col-md-4">
-							<div class="wf-block wf-block--crossed wf-block--color-dark">
+							<div class="wf-block wf-block--crossed wf-block--color-dark" title="Colored block with a crossed background">
 								<span class="wf-block__label">Dark block</span>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="wf-block wf-block--crossed wf-block--color-light">
+							<div class="wf-block wf-block--crossed wf-block--color-light" title="Colored block with a crossed background">
 								<span class="wf-block__label">Light block</span>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="wf-block wf-block--crossed wf-block--color-red">
+							<div class="wf-block wf-block--crossed wf-block--color-red" title="Colored block with a crossed background">
 								<span class="wf-block__label">Red block</span>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="wf-block wf-block--crossed wf-block--color-green">
+							<div class="wf-block wf-block--crossed wf-block--color-green" title="Colored block with a crossed background">
 								<span class="wf-block__label">Green block</span>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="wf-block wf-block--crossed wf-block--color-yellow">
+							<div class="wf-block wf-block--crossed wf-block--color-yellow" title="Colored block with a crossed background">
 								<span class="wf-block__label">Yellow block</span>
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="wf-block wf-block--crossed wf-block--color-pink">
+							<div class="wf-block wf-block--crossed wf-block--color-pink" title="Colored block with a crossed background">
 								<span class="wf-block__label">Pink block</span>
 							</div>
 						</div>
@@ -124,7 +113,7 @@
 				</div>
 
 				<div class="col-md-4 wf-optional">
-					<div class="wf-block wf-block--fill" title="A block">
+					<div class="wf-block wf-block--fill" title="A block filling its optional container">
 						<span class="wf-block__label" title="A block label">
 							Navigation
 						</span>
@@ -134,53 +123,399 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- end #overview -->
+		</div>
+	</section>
+	<!-- end #overview -->
 
+	<!-- #documentation : gives a detailled explanation of each element -->
+	<section id="documentation" class="documentation language-html">
+		<h1 class="documentation__heading documentation__title">Documentation</h1>
+		<div class="container">
+			<div class="row">
 
-		<!-- Text section -->
-		<section id="text" class="wf-doc__section">
-			<h2 class="wf-doc__section-title">Text</h2>
-			<!-- Explanation -->
-			<div class="wf-doc__explanation">
-				<h3 class="wf-doc__explanation-title">Text lines</h3>
-				<p  class="wf-doc__explanation-content">
-					Use dummy text lines to obtain less distracting text.
-					<br>it must be applied <strong>only on inline elements.</strong>
-				</p>
-			</div>
-			<!-- Class name -->
-			<label class="wf-doc__class">.wf-text-lines</label>
-			<div class="wf-doc__demo-code">
-				<div class="row no-gutters align-items-start">
-					<!-- Demo -->
-					<div class="col-md-6">
-						<div class="wf-doc__demo">
-							<span class="wf-text-lines">
-								Vestibulum cras condimentum dis ullamcorper.
-								<br>Vestibulum cras condimentum.
-							</span>
-						</div>
+				<!-- Elements -->
+				<div class="col-sm-8 col-md-10">
+
+					<div class="documentation__introduction">
+						<h2 class="documentation__heading">CSS selectors naming convention</h2>
+						<p>
+							All the framework classes are prefixed with &ldquo;<strong>wf-</strong>&rdquo; : <code>wf-block</code>, <code>wf-note</code>, etc.
+							<br>Furthermore, we use the <a href="https://en.bem.info/methodology/naming-convention/">BEM naming convention</a>. It stands for <strong>B</strong>lock <strong>E</strong>lement <strong>M</strong>odifier, and in a nutshell, is a practicall way to make names of CSS selectors as informative and clear as possible. It looks like this : <code>block__element--modifier</code>.
+							<br>Use modifiers <strong>in conjonction</strong> to the basic class, like so : <code>class="wf-something wf-something--modifier"</code>.
+							<br>Please note that there's a bit a flexbox, transformations and such, so old outdated browsers are a no no!
+						</p>
+						<h2 class="documentation__heading">Color scheme</h2>
+						<p>
+							The framework is monochrome by choice : the sole purpose of a wireframe is to show the <strong>layout</strong> of the page, it should not convey any information about its theme. There are a few colored elements available, but they should only be used in very specific cases.
+						<p>
+
 					</div>
-					<!-- Code -->
-					<div class="col-md-6">
-						<pre class="wf-doc__code">
-							<code class="html">
-								<span class="wf-text-lines">Vestibulum cras condimentum dis ullamcorper.</span>
-							</code>
-						</pre>
+
+					<div class="documentation__elements">
+
+						<!-- #block -->
+						<section id="block" class="element">
+							<h2 class="element__name documentation__heading">Block</h2>
+							<!-- basic block -->
+							<label class="element__class">.wf-block</label>
+							<p>
+								A &ldquo;block&rdquo; allow you to materialize sections of your page.
+								<br>Basically, it's just a border with a bit of padding.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<div class="wf-block"></div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div class=&quot;wf-block&quot;&gt;&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- labelled blocks -->
+							<label class="element__class">.wf-block__label</label>
+							<p>
+								Blocks can have a label, which is centered horizontally and vertically. When labelled, a block is supposed to contain <strong>only</strong> the label, and no other content.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<div class="wf-block">
+												<label class="wf-block__label">A label</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div class=&quot;wf-block&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;A label&lt;/label&gt;&#10;&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- crossed block  -->
+							<label class="element__class">.wf-block</label><label class="element__class--variant">.wf-block--crossed</label>
+							<p>
+								Add diagonals in the background.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<div class="wf-block wf-block--crossed"></div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div class=&quot;wf-block wf-block--crossed&quot;&gt;&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- filler block -->
+							<label class="element__class">.wf-block</label><label class="element__class--variant">.wf-block--fill</label>
+							<p>
+								Make the block fill its container.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview" style="height: 100%">
+											<div class="wf-block wf-block--fill"></div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div style=&quot;height: 6rem&quot;&gt;&#10;&Tab;&lt;div class=&quot;wf-block wf-block--fill&quot;&gt;&lt;/div&gt;&#10;&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- colored block  -->
+							<label class="element__class">.wf-block</label><label class="element__class--variant">.wf-block--color-[color name]</label>
+							<p>
+								Colored background to highlight some blocks : dark, light, red, green, yellow, pink.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<div class="wf-block wf-block--color-dark"><label class="wf-block__label">Dark</label></div>
+											<div class="wf-block wf-block--color-light"><label class="wf-block__label">Light</label></div>
+											<div class="wf-block wf-block--color-red"><label class="wf-block__label">Red</label></div>
+											<div class="wf-block wf-block--color-green"><label class="wf-block__label">Green</label></div>
+											<div class="wf-block wf-block--color-yellow"><label class="wf-block__label">Yellow</label></div>
+											<div class="wf-block wf-block--color-pink"><label class="wf-block__label">Pink</label></div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div class=&quot;wf-block wf-block--color-dark&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;Dark&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;wf-block wf-block--color-light&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;Light&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;wf-block wf-block--color-red&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;Red&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;wf-block wf-block--color-green&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;Green&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;wf-block wf-block--color-yellow&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;Yellow&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;wf-block wf-block--color-pink&quot;&gt;&#10;&Tab;&lt;label class=&quot;wf-block__label&quot;&gt;Pink&lt;/label&gt;&#10;&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- #text -->
+						<section id="text" class="element">
+							<h2 class="element__name documentation__heading">Text</h2>
+							<!-- Line text -->
+							<label class="element__class">.wf-text-lines</label>
+							<p>
+								Makes the text more abstract and less distracting by displaying it as lines.
+								<br>It must be applied only on <strong>inline elements.</strong>
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<span class="wf-text-lines">
+												Vestibulum cras condimentum dis ullamcorper.
+												<br>Vestibulum cras condimentum.
+												<br>Condimentum dis Vestibulum cras condimentum dis ullamcorper.
+											</span>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;span class=&quot;wf-text-lines&quot;&gt;&#10;&Tab;Vestibulum cras condimentum dis ullamcorper.&#10;&Tab;&lt;br&gt;Vestibulum cras condimentum.&#10;&Tab;&lt;br&gt;Condimentum dis Vestibulum cras condimentum dis ullamcorper.&#10;&lt;/span&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<!-- Block text -->
+							<label class="element__class">.wf-text-words</label>
+							<p>
+								Similar to line text, except each word is visible.
+								<br>Can be applied on any element.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<span class="wf-text-words">
+												Vestibulum cras condimentum dis ullamcorper.
+												<br>Vestibulum cras condimentum.
+												<br>Condimentum dis Vestibulum cras condimentum dis ullamcorper.
+											</span>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;span class=&quot;wf-text-words&quot;&gt;&#10;&Tab;Vestibulum cras condimentum dis ullamcorper.&#10;&Tab;&lt;br&gt;Vestibulum cras condimentum.&#10;&Tab;&lt;br&gt;Condimentum dis Vestibulum cras condimentum dis ullamcorper.&#10;&lt;/span&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- #media -->
+						<section id="media" class="element">
+							<h2 class="element__name documentation__heading">Media</h2>
+							<p>
+								This class turn any <code>&lt;img&gt;</code> into a placeholder media : image, audio file or video.
+								<br>Ideally the image should be transparent.
+							</p>
+							<p>
+								For convenience, there are several images provided in the <strong>images/</strong> folder, with the most common ratios : square, portrait, landscape, etc.
+								<br>In short, choose the ratio you like, put a width or a height and you're done.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-center">
+									<div class="col text-center">
+										1/1 <br><img src="../dist/images/ratio-1-1.png" width="100" class="wf-media">
+									</div>
+									<div class="col text-center">
+										4/3 <br><img src="../dist/images/ratio-4-3.png" width="100" class="wf-media">
+									</div>
+									<div class="col text-center">
+										16/9 <br><img src="../dist/images/ratio-16-9.png" width="100" class="wf-media">
+									</div>
+									<div class="col text-center">
+										2/1 <br><img src="../dist/images/ratio-2-1.png" width="100" class="wf-media">
+									</div>
+									<div class="col text-center">
+										3/1 <br><img src="../dist/images/ratio-3-1.png" width="100" class="wf-media">
+									</div>
+								</div>
+							</div>
+							<label class="element__class">.wf-media</label>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<img src="../dist/images/ratio-1-1.png" width="130" class="wf-media">
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;img&#10;&Tab;src=&quot;images/ratio-1-1.png&quot;&#10;&Tab;width=&quot;130&quot;&#10;&Tab;class=&quot;wf-media&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<label class="element__class">.wf-media</label><label class="element__class element__class--variant">.wf-media--dark</label>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<img src="../dist/images/ratio-1-1.png" width="130" class="wf-media wf-media--dark">
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;img&#10;&Tab;src=&quot;images/ratio-1-1.png&quot;&#10;&Tab;width=&quot;130&quot;&#10;&Tab;class=&quot;wf-media wf-media--dark&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<label class="element__class">.wf-media</label><label class="element__class element__class--variant">.wf-media--video</label>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<img src="../dist/images/ratio-1-1.png" width="130" class="wf-media wf-media--video">
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;img&#10;&Tab;src=&quot;images/ratio-1-1.png&quot;&#10;&Tab;width=&quot;130&quot;&#10;&Tab;class=&quot;wf-media wf-media--video&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<label class="element__class">.wf-media</label><label class="element__class element__class--variant">.wf-media--audio</label>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<img src="../dist/images/ratio-1-1.png" width="130" class="wf-media wf-media--audio">
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;img&#10;&Tab;src=&quot;images/ratio-1-1.png&quot;&#10;&Tab;width=&quot;130&quot;&#10;&Tab;class=&quot;wf-media wf-media--audio&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- #icons -->
+						<section id="icons" class="element">
+							<h2 class="element__name documentation__heading">Icons</h2>
+							<label class="element__class--variant">.wf-icon--[name]</label>
+							<p>
+								Who doesn't like nice sketchy icons?
+								<br><small><a href="https://thenounproject.com/allie.fanni/collection/sketchy-wireframe/">sketchy wireframe</a> by Alice Mortaro.</small>
+							</p>
+							<div class="element__example">
+								<div class="element__preview">
+									<div class="row">
+										<div class="col"><small>add</small> <span class="wf-icon--add"></span></div>
+										<div class="col"><small>arrows</small> <span class="wf-icon--arrows"></span></div>
+										<div class="col"><small>audio</small> <span class="wf-icon--audio"></span></div>
+										<div class="col"><small>calendar</small> <span class="wf-icon--calendar"></span></div>
+										<div class="col"><small>camera</small> <span class="wf-icon--camera"></span></div>
+										<div class="col"><small>chat</small> <span class="wf-icon--chat"></span></div>
+										<div class="col"><small>checkbox</small> <span class="wf-icon--checkbox"></span></div>
+										<div class="col"><small>close</small> <span class="wf-icon--close"></span></div>
+										<div class="col"><small>cloud</small> <span class="wf-icon--cloud"></span></div>
+										<div class="col"><small>comment</small> <span class="wf-icon--comment"></span></div>
+										<div class="col"><small>connect</small> <span class="wf-icon--connect"></span></div>
+										<div class="col"><small>danger</small> <span class="wf-icon--danger"></span></div>
+										<div class="col"><small>document</small> <span class="wf-icon--document"></span></div>
+										<div class="col"><small>document-view</small> <span class="wf-icon--document-view"></span></div>
+										<div class="col"><small>enlarge</small> <span class="wf-icon--enlarge"></span></div>
+										<div class="col"><small>envelope</small> <span class="wf-icon--envelope"></span></div>
+										<div class="col"><small>globe</small> <span class="wf-icon--globe"></span></div>
+										<div class="col"><small>graph</small> <span class="wf-icon--graph"></span></div>
+										<div class="col"><small>help</small> <span class="wf-icon--help"></span></div>
+										<div class="col"><small>home</small> <span class="wf-icon--home"></span></div>
+										<div class="col"><small>info</small> <span class="wf-icon--info"></span></div>
+										<div class="col"><small>marker</small> <span class="wf-icon--marker"></span></div>
+										<div class="col"><small>menu</small> <span class="wf-icon--menu"></span></div>
+										<div class="col"><small>mobile</small> <span class="wf-icon--mobile"></span></div>
+										<div class="col"><small>pencil</small> <span class="wf-icon--pencil"></span></div>
+										<div class="col"><small>play</small> <span class="wf-icon--play"></span></div>
+										<div class="col"><small>printer</small> <span class="wf-icon--printer"></span></div>
+										<div class="col"><small>refresh</small> <span class="wf-icon--refresh"></span></div>
+										<div class="col"><small>search</small> <span class="wf-icon--search"></span></div>
+										<div class="col"><small>settings</small> <span class="wf-icon--settings"></span></div>
+										<div class="col"><small>time</small> <span class="wf-icon--time"></span></div>
+										<div class="col"><small>user</small> <span class="wf-icon--user"></span></div>
+										<div class="col"><small>users</small> <span class="wf-icon--users"></span></div>
+										<div class="col"><small>view</small> <span class="wf-icon--view"></span></div>
+										<div class="col"><small>view-list</small> <span class="wf-icon--view-list"></span></div>
+										<div class="col"><small>view-thumbnail</small> <span class="wf-icon--view-thumbnail"></span></div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- #note -->
+						<section id="note" class="element">
+							<h2 class="element__name documentation__heading">Note</h2>
+							<label class="element__class">.wf-note</label>
+							<p>
+								Use notes to add comments about any elements (typically blocks). They are dispayed on the top right corner of their parent, and can be hidden.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<span class="wf-note">A usefull comment</span>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div class=&quot;wf-note&quot;&gt;A usefull comment&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- #helpers -->
+						<section id="helpers" class="element">
+							<h2 class="element__name documentation__heading">Helpers</h2>
+							<label class="element__class">.wf-optional</label>
+							<p>
+								Make any element optional so it can be hidden. You can display them again later with a toolbar displayed on the bottom right.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-4">
+										<div class="element__preview">
+											<div class="wf-block wf-optional">
+												<span class="wf-block__label">I'm optional, hover me and hide me!</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<pre class="element__source">
+<code>&lt;div class=&quot;wf-block wf-optional&quot;&gt;&#10;&Tab;&lt;span class=&quot;wf-block__label&quot;&gt;I&apos;m optional, hover me and hide me&lt;/span&gt;&#10;&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+						</section>
+
 					</div>
 				</div>
+
+				<!-- Menu -->
+				<div class="col-sm-4 col-md-2">
+					<ul class="documentation__menu list-none" id="menu">
+						<li class="item"><a href="#block">Block</a></li>
+						<li class="item"><a href="#text">Text</a></li>
+						<li class="item"><a href="#media">Media</a></li>
+						<li class="item"><a href="#note">Note</a></li>
+						<li class="item item--disabled"><a href="#card">Card</a></li>
+						<li class="item item--disabled"><a href="#form">Forms</a></li>
+						<li class="item item--disabled"><a href="#tabs">Tabs</a></li>
+						<li class="item item--disabled"><a href="#list">Elements list</a></li>
+						<li class="item"><a href="#icons">Icons</a></li>
+						<li class="item"><a href="#helpers">Helpers</a></li>
+					</ul>
+				</div>
+
 			</div>
-		</section>
-		<!-- end #text -->
+		</div>
+	</section>
+	<!-- end #documentation -->
 
-
-	</div>
-	<!-- Init code highlighting -->
-	<script>
-		hljs.initHighlightingOnLoad();
-	</script>
 </body>
-
 </html>
