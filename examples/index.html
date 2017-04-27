@@ -56,7 +56,7 @@
 						<figcaption><span class="wf-text-lines">Lorem vinae</span></figcaption>
 					</figure>
 
-					<span class="wf-optional wf-width--20 wf-media wf-media--rounded wf-media--dark right wf-margin--left wf-margin--bottom" title="Optional dark rounded media with a 20% width"></span>
+					<span class="wf-optional wf-width--20p wf-media wf-media--rounded wf-media--dark right wf-margin--left wf-margin--bottom" title="Optional dark rounded media with a 20% width"></span>
 
 					<p title="Dummy text" class="wf-margin--bottom--large">
 						<span class="wf-text-lines">Vestibulum cras condimentum dis ullamcorper mattis dictumst interdum a commodo a parturient sit cras laoreet adipiscing magna sapien. A interdum curabitur vestibulum vestibulum dui cursus aptent dictum litora ipsum viverra scelerisque vestibulum venenatis dictumst a. Sociosqu at et erat nulla parturient orci porttitor lorem lobortis consectetur nibh vulputate hac fames dis at a ullamcorper elementum donec. Laoreet adipiscing magna sapien. A interdum curabitur vestibulum vestibulum.</span>
@@ -365,15 +365,15 @@
 								<div class="row align-items-start">
 									<div class="col-md-5">
 										<div class="element__preview">
-											<span class="wf-media wf-ratio--4-3 wf-width--20" title="4/3 aspect ratio"></span>
-											<span class="wf-media wf-ratio--3-2 wf-width--20" title="3/2 aspect ratio"></span>
-											<span class="wf-media wf-ratio--16-9 wf-width--20" title="16/9 aspect ratio"></span>
-											<span class="wf-media wf-ratio--2-1 wf-width--20" title="4/3 aspect ratio"></span>
+											<span class="wf-media wf-ratio--4-3 wf-width--20p" title="4/3 aspect ratio"></span>
+											<span class="wf-media wf-ratio--3-2 wf-width--20p" title="3/2 aspect ratio"></span>
+											<span class="wf-media wf-ratio--16-9 wf-width--20p" title="16/9 aspect ratio"></span>
+											<span class="wf-media wf-ratio--2-1 wf-width--20p" title="4/3 aspect ratio"></span>
 											<br>
-											<span class="wf-media wf-ratio--3-4 wf-width--20" title="3/4 aspect ratio"></span>
-											<span class="wf-media wf-ratio--2-3 wf-width--20" title="2/3 aspect ratio"></span>
-											<span class="wf-media wf-ratio--9-16 wf-width--20" title="9/16 aspect ratio"></span>
-											<span class="wf-media wf-ratio--1-2 wf-width--20" title="2/1 aspect ratio"></span>
+											<span class="wf-media wf-ratio--3-4 wf-width--20p" title="3/4 aspect ratio"></span>
+											<span class="wf-media wf-ratio--2-3 wf-width--20p" title="2/3 aspect ratio"></span>
+											<span class="wf-media wf-ratio--9-16 wf-width--20p" title="9/16 aspect ratio"></span>
+											<span class="wf-media wf-ratio--1-2 wf-width--20p" title="2/1 aspect ratio"></span>
 										</div>
 									</div>
 									<div class="col-md-7">
@@ -387,28 +387,47 @@
 							<h3 class="element__class" id="wf-width">.wf-media<span class="class--variant">.wf-width--<em>[width]</em></span></h3>
 							<p>
 								Use the helper class <code>.wf-width--<em>[width]</em></code> to set the width of medias.
-								<br>Widths are expressed as percentages, so keep in mind they are relative to their container. They go from 5% to 100% in 5% increments: 5,10,15,20,25 and so on. 
-							</p>
-							<p>
-								If you really need a precise width, use instead a placeholder images service like <code>http://placehold.it</code> for instance.
+								<br>There are two types of width:
+								<br><span class="big">&rarr;</span> <strong>Relative width: </strong> unit is in <code>%</code> (relative to the media's container). They go from 5% to 100% in 5% increments: 5,10,15 and so on. 
+								<br>
 							</p>
 							<div class="element__example">
 								<div class="row align-items-start">
 									<div class="col-md-5">
 										<div class="element__preview">
-											<span class="wf-media wf-width--5" title="5% width"></span>
-											<span class="wf-media wf-width--10" title="10% width"></span>
-											<span class="wf-media wf-width--15" title="15% width"></span>
-											<span class="wf-media wf-width--20" title="20% width"></span>
-											<span class="wf-media wf-width--25" title="25% width"></span>
+											<span class="wf-media wf-width--5p" title="5% width"></span>
+											<span class="wf-media wf-width--10p" title="10% width"></span>
+											<span class="wf-media wf-width--15p" title="15% width"></span>
+											<span class="wf-media wf-width--20p" title="20% width"></span>
+											<span class="wf-media wf-width--25p" title="25% width"></span>
 										</div>
 									</div>
 									<div class="col-md-7">
 										<pre class="element__source">
-<code>&lt;span class=&quot;wf-media wf-width--5&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--10&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--15&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--20&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--25&quot;&gt;&lt;/span&gt;&#10;&lt;!-- and so on until 100 --&gt;</code></pre>
+<code>&lt;!-- width in % --&gt;&#10;&lt;span class=&quot;wf-media wf-width--5p&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--10p&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--15p&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--20p&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--25p&quot;&gt;&lt;/span&gt;&#10;&lt;!-- and so on until 100 --&gt;</code></pre>
 									</div>
 								</div>
 							</div>
+							</p>
+								<span class="big">&rarr;</span> <strong>Fixed width: </strong> Unit is in <code>rem</code>. They go from 5rem to 30rem in 5rem increments: 5,10,15 and so on.
+							</p>
+							<div class="element__example">
+								<div class="row align-items-start">
+									<div class="col-md-5">
+										<div class="element__preview">
+											<span class="wf-media wf-width--5r" title="5rem width"></span>
+											<span class="wf-media wf-width--10r" title="10rem width"></span>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<pre class="element__source">
+<code>&lt;!-- width in rem --&gt;&#10;&lt;span class=&quot;wf-media wf-width--5r&quot;&gt;&lt;/span&gt;&#10;&lt;span class=&quot;wf-media wf-width--10r&quot;&gt;&lt;/span&gt;&#10;&lt;!-- and so on until 30 --&gt;</code></pre>
+									</div>
+								</div>
+							</div>
+							<p>
+								If you really need a pixel-precise width, use instead a placeholder image service like <code>http://placehold.it</code> for instance.
+							</p>
 							
 							<!-- dark media -->
 							<h3 class="element__class" id="wf-media--dark">.wf-media<span class="class--variant">.wf-media--dark</span></h3>
@@ -507,48 +526,61 @@
 							<h3 class="element__class" id="wf-icon">.wf-icon--<em>[name]</em></h3>
 							<p>
 								Who doesn't like nice sketchy icons?
-								<br><small><a href="https://thenounproject.com/allie.fanni/collection/sketchy-wireframe/">sketchy wireframe</a> by Alice Mortaro.</small>
+								<br>Based on <small><a href="https://thenounproject.com/allie.fanni/collection/sketchy-wireframe/">sketchy wireframe</a> by Alice Mortaro.</small>
 							</p>
-							<pre class="element_source wf-margin--bottom"><code>&lt;span class=&quot;wf-icon--add&quot;&gt;&lt;/span&gt;</code></pre>
+							<pre class="element_source"><code>&lt;span class=&quot;wf-icon--add&quot;&gt;&lt;/span&gt;</code></pre>
 							<div class="element__example">
 								<div class="element__preview">
 									<div class="row">
-										<div class="col"><small>add</small> <span class="wf-icon--add"></span></div>
-										<div class="col"><small>arrows</small> <span class="wf-icon--arrows"></span></div>
-										<div class="col"><small>audio</small> <span class="wf-icon--audio"></span></div>
-										<div class="col"><small>calendar</small> <span class="wf-icon--calendar"></span></div>
-										<div class="col"><small>camera</small> <span class="wf-icon--camera"></span></div>
-										<div class="col"><small>chat</small> <span class="wf-icon--chat"></span></div>
-										<div class="col"><small>checkbox</small> <span class="wf-icon--checkbox"></span></div>
-										<div class="col"><small>close</small> <span class="wf-icon--close"></span></div>
-										<div class="col"><small>cloud</small> <span class="wf-icon--cloud"></span></div>
-										<div class="col"><small>comment</small> <span class="wf-icon--comment"></span></div>
-										<div class="col"><small>connect</small> <span class="wf-icon--connect"></span></div>
-										<div class="col"><small>danger</small> <span class="wf-icon--danger"></span></div>
-										<div class="col"><small>document</small> <span class="wf-icon--document"></span></div>
-										<div class="col"><small>document-view</small> <span class="wf-icon--document-view"></span></div>
-										<div class="col"><small>enlarge</small> <span class="wf-icon--enlarge"></span></div>
-										<div class="col"><small>envelope</small> <span class="wf-icon--envelope"></span></div>
-										<div class="col"><small>globe</small> <span class="wf-icon--globe"></span></div>
-										<div class="col"><small>graph</small> <span class="wf-icon--graph"></span></div>
-										<div class="col"><small>help</small> <span class="wf-icon--help"></span></div>
-										<div class="col"><small>home</small> <span class="wf-icon--home"></span></div>
-										<div class="col"><small>info</small> <span class="wf-icon--info"></span></div>
-										<div class="col"><small>marker</small> <span class="wf-icon--marker"></span></div>
-										<div class="col"><small>menu</small> <span class="wf-icon--menu"></span></div>
-										<div class="col"><small>mobile</small> <span class="wf-icon--mobile"></span></div>
-										<div class="col"><small>pencil</small> <span class="wf-icon--pencil"></span></div>
-										<div class="col"><small>play</small> <span class="wf-icon--play"></span></div>
-										<div class="col"><small>printer</small> <span class="wf-icon--printer"></span></div>
-										<div class="col"><small>refresh</small> <span class="wf-icon--refresh"></span></div>
-										<div class="col"><small>search</small> <span class="wf-icon--search"></span></div>
-										<div class="col"><small>settings</small> <span class="wf-icon--settings"></span></div>
-										<div class="col"><small>time</small> <span class="wf-icon--time"></span></div>
-										<div class="col"><small>user</small> <span class="wf-icon--user"></span></div>
-										<div class="col"><small>users</small> <span class="wf-icon--users"></span></div>
-										<div class="col"><small>view</small> <span class="wf-icon--view"></span></div>
-										<div class="col"><small>view-list</small> <span class="wf-icon--view-list"></span></div>
-										<div class="col"><small>view-thumbnail</small> <span class="wf-icon--view-thumbnail"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>add</small> <span class="wf-icon--add"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>arrows</small> <span class="wf-icon--arrows"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>audio</small> <span class="wf-icon--audio"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>calendar</small> <span class="wf-icon--calendar"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>camera</small> <span class="wf-icon--camera"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>chat</small> <span class="wf-icon--chat"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>checkbox</small> <span class="wf-icon--checkbox"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>close</small> <span class="wf-icon--close"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>cloud</small> <span class="wf-icon--cloud"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>comment</small> <span class="wf-icon--comment"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>connect</small> <span class="wf-icon--connect"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>danger</small> <span class="wf-icon--danger"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>deny</small> <span class="wf-icon--deny"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>document</small> <span class="wf-icon--document"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>document-view</small> <span class="wf-icon--document-view"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>enlarge</small> <span class="wf-icon--enlarge"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>envelope</small> <span class="wf-icon--envelope"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>globe</small> <span class="wf-icon--globe"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>graph</small> <span class="wf-icon--graph"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>help</small> <span class="wf-icon--help"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>home</small> <span class="wf-icon--home"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>info</small> <span class="wf-icon--info"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>marker</small> <span class="wf-icon--marker"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>menu</small> <span class="wf-icon--menu"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>mobile</small> <span class="wf-icon--mobile"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>pencil</small> <span class="wf-icon--pencil"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>play</small> <span class="wf-icon--play"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>printer</small> <span class="wf-icon--printer"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>refresh</small> <span class="wf-icon--refresh"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>search</small> <span class="wf-icon--search"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>settings</small> <span class="wf-icon--settings"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>time</small> <span class="wf-icon--time"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>user</small> <span class="wf-icon--user"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>users</small> <span class="wf-icon--users"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>view</small> <span class="wf-icon--view"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>view-list</small> <span class="wf-icon--view-list"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>view-thumbnail</small> <span class="wf-icon--view-thumbnail"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>arrow-left</small> <span class="wf-icon--arrow-left"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>arrow-right</small> <span class="wf-icon--arrow-right"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>arrow-top</small> <span class="wf-icon--arrow-top"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>arrow-bottom</small> <span class="wf-icon--arrow-bottom"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-left</small> <span class="wf-icon--angle-left"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-right</small> <span class="wf-icon--angle-right"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-top</small> <span class="wf-icon--angle-top"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-bottom</small> <span class="wf-icon--angle-bottom"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-double-left</small> <span class="wf-icon--angle-double-left"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-double-right</small> <span class="wf-icon--angle-double-right"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-double-top</small> <span class="wf-icon--angle-double-top"></span></div>
+										<div class="col-4 col-sm-3 col-md-2"><small>angle-double-bottom</small> <span class="wf-icon--angle-double-bottom"></span></div>
 									</div>
 								</div>
 							</div>
